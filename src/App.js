@@ -6,10 +6,6 @@ import AddTask from './components/AddTask'
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(true)
 
-  const func = () => {
-    console.log("abc")
-  }
-
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -44,7 +40,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <Header onAdd={() => setShowAddTask(!showAddTask)} onCheck={func} />
+      <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
       {showAddTask && <AddTask onAdd={addTask} />}
       <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
     </div>
