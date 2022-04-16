@@ -23,6 +23,12 @@
       "name": "Sunday",
       "reminder": true,
       "id": 4
+    },
+    {
+      "text": "Appointment",
+      "name": "Timmy",
+      "reminder": true,
+      "id": 5
     }
   ]
 }
